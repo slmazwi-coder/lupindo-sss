@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lupindo Senior Secondary School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Lupindo S.S.S.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Lupindo Senior Secondary School</h1>
+                <p>Empowering minds, shaping futures since 1990</p>
+                <button class="cta-button" onclick="scrollToSection('about')">Learn More</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Lupindo Senior Secondary School is a public institution specialising in ordinary school education. Located in Tshisa Location, Lupindo A/A, Matatiele, within the Alfred Nzo District Municipality, we have been serving the community since 1990.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Principal</h3>
+                    <p>LM Ntshayisa</p>
+                </div>
+                <div class="service-card">
+                    <h3>Location</h3>
+                    <p>Tshisa Location, Matatiele, 4730</p>
+                </div>
+                <div class="service-card">
+                    <h3>District</h3>
+                    <p>Alfred Nzo West District</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="academics" class="section">
+            <h2>Academics</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Staff</h3>
+                    <p>17 dedicated teachers</p>
+                </div>
+                <div class="service-card">
+                    <h3>Learners</h3>
+                    <p>292 students</p>
+                </div>
+                <div class="service-card">
+                    <h3>Exam Centre</h3>
+                    <p>LUPHINDO S.S. SCHOOL (03)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <div class="services-grid" style="margin-bottom: 2rem;">
+                <div class="service-card">
+                    <h3>Telephone</h3>
+                    <p>079 500 8111</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cellphone</h3>
+                    <p>073 077 9988</p>
+                </div>
+                <div class="service-card">
+                    <h3>Address</h3>
+                    <p>Tshisa Location, Lupindo A/A, Matatiele, 4730</p>
+                </div>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lupindo Senior Secondary School. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
