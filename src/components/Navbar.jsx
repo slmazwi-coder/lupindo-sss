@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, GraduationCap } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { SCHOOL } from '../lib/store'
 
 const NAV_LINKS = [
@@ -42,12 +42,11 @@ export default function Navbar() {
 
           {/* Logo + Name */}
           <Link to="/" className="flex items-center gap-3 group min-w-0">
-            <div
-              className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
-              style={{ background: '#C8A400' }}
-            >
-              <GraduationCap size={22} style={{ color: '#166534' }} />
-            </div>
+            <img
+              src="/assets/logo.png"
+              alt="Lupindo SSS Logo"
+              className="w-10 h-10 rounded-lg shrink-0 object-contain"
+            />
             <div className="min-w-0">
               <p className="font-display text-sm font-bold leading-tight truncate" style={{ color: '#C8A400' }}>
                 Lupindo SSS

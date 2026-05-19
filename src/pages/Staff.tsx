@@ -1,15 +1,7 @@
 import React from 'react';
 import { User } from 'lucide-react';
 
-interface StaffMember {
-  name: string;
-  position: string;
-  subject?: string;
-  category: string;
-  image?: string;
-}
-
-const staffData: StaffMember[] = [
+const staffData = [
   // ── Leadership ──────────────────────────────────────────────────────────
   {
     name: 'Mr S.S. Mafunda',
@@ -89,7 +81,7 @@ const StaffCard = ({ member }) => (
           src={member.image}
           alt={member.name}
           className="w-full h-full object-cover object-top"
-          onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+          onError={(e) => { e.target.style.display = 'none'; }}
         />
       ) : (
         <User size={40} style={ { color: '#C8A400', opacity: 0.5 } } />
@@ -141,7 +133,7 @@ export const Staff = () => {
               style={
                 activeCategory === cat
                   ? { background: '#C8A400', color: '#166534', border: '2px solid #C8A400', fontWeight: 700 }
-                  
+                  : { background: 'transparent', color: '#166534', border: '2px solid #C8A400' }
               }
               className="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 hover:shadow-md"
             >

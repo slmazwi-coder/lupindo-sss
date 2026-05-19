@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react'
 
 const SLIDES = [
-  { caption: 'Academic Excellence',          sub: 'Shaping tomorrow's leaders today' },
+  { caption: 'Academic Excellence',          sub: "Shaping tomorrow's leaders today" },
   { caption: 'Amidst Difficulties We Rise',  sub: 'Our motto is our promise' },
   { caption: 'Provincial Athletics Champions', sub: 'Proud of every achievement' },
   { caption: '94.5% Matric Pass Rate',        sub: 'Class of 2025' },
@@ -30,6 +30,16 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden diagonal-strip" style={{ minHeight: '88vh', background: '#166534' }}>
+
+      {/* Campus background image */}
+      <div className="absolute inset-0">
+        <img
+          src="/assets/campus.jpg"
+          alt="Lupindo SSS Campus"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0" style={{ background: 'rgba(22,101,52,0.82)' }} />
+      </div>
 
       {/* Geometric pattern overlay */}
       <div className="absolute inset-0 opacity-5" style={{

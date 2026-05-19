@@ -13,6 +13,15 @@ export default function About() {
         <div className="gold-bar" />
         <h1 className="section-title mb-12">About Lupindo SSS</h1>
 
+        {/* Campus image */}
+        <div className="mb-12 rounded-2xl overflow-hidden" style={{ maxHeight: '400px' }}>
+          <img
+            src="/assets/campus.jpg"
+            alt="Lupindo SSS Campus"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
         {/* History */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-20">
           <div>
