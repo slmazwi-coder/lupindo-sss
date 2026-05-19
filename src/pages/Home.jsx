@@ -28,13 +28,6 @@ export default function Home() {
                 to:    '/admissions',
                 label: 'Apply now',
               },
-              {
-                badge: 'Boarding 2027',
-                title: 'Boarding applications are open',
-                body:  'Hostel accommodation applications for the 2027 year are now being accepted.',
-                to:    '/boarding',
-                label: 'Apply for boarding',
-              },
             ].map(({ badge, title, body, to, label }) => (
               <div key={to} className="card flex gap-4 items-start"
                 style={{ borderLeft: '4px solid #C8A400' }}>

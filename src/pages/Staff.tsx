@@ -4,36 +4,32 @@ import { User } from 'lucide-react';
 const staffData = [
   // ── Leadership ──────────────────────────────────────────────────────────
   {
-    name: 'Mr S.S. Mafunda',
+    name: 'Principal',
     position: 'Principal',
     category: 'Leadership',
-    image: './assets/about/principal.jpg',
   },
   {
     name: 'Deputy Principal',
     position: 'Deputy Principal',
     category: 'Leadership',
   },
-
-  // ── Departmental Heads ───────────────────────────────────────────────────
-  // Update names below via the Staff Portal once confirmed
   {
     name: 'HOD — Humanities',
     position: 'Head of Department',
     subject: 'Humanities',
-    category: 'Departmental Heads',
+    category: 'Leadership',
   },
   {
     name: 'HOD — Mathematics & Science',
     position: 'Head of Department',
     subject: 'Mathematics & Science',
-    category: 'Departmental Heads',
+    category: 'Leadership',
   },
   {
     name: 'HOD — Languages',
     position: 'Head of Department',
     subject: 'Languages',
-    category: 'Departmental Heads',
+    category: 'Leadership',
   },
 
   // ── Class Teachers ───────────────────────────────────────────────────────
@@ -61,7 +57,6 @@ const staffData = [
 
 const categories = [
   'Leadership',
-  'Departmental Heads',
   'Class Teachers',
   'Support Staff',
 ];
@@ -71,7 +66,7 @@ const StaffCard = ({ member }) => (
     className="rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center p-6 text-center hover:-translate-y-1"
     style={ { background: '#FFFBEF', border: '1px solid #C8A400' } }
   >
-    {/* Avatar */}
+    {/* Avatar placeholder */}
     <div
       className="w-24 h-24 rounded-full flex items-center justify-center mb-4 overflow-hidden"
       style={ { background: '#FDF9EC', border: '3px solid #C8A400' } }
@@ -154,7 +149,7 @@ export const Staff = () => {
 
         {/* Note */}
         <p className="text-center text-gray-400 text-xs mt-10 italic">
-          Staff names and photos will be updated progressively. Add details via the Staff Portal.
+          Staff names and photos will be updated progressively.
         </p>
       </div>
     </div>

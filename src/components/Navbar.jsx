@@ -9,8 +9,8 @@ const NAV_LINKS = [
   { label: 'Achievements', to: '/achievements' },
   { label: 'Sport & Arts', to: '/activities' },
   { label: 'Documents',    to: '/documents' },
+  { label: 'Staff',        to: '/staff' },
   { label: 'Admissions',   to: '/admissions' },
-  { label: 'Boarding',     to: '/boarding' },
   { label: 'Contact',      to: '/contact' },
 ]
 
