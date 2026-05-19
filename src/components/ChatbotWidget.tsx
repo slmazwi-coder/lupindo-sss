@@ -13,11 +13,10 @@ School facts:
 - Grades 8–12, public no-fee school
 - EMIS: 200500470
 - 2025 matric pass rate: 94.5% | Bachelor passes: 206 (71.8%) | Distinctions: 451
-- 2027 applications currently open (general and boarding)
+- 2027 general admission applications currently open
 - School hours: Mon–Thu 07:30–15:30, Fri 07:30–13:30
 - Sports: Soccer, Netball, Athletics, Rugby
 - Activities: Debating, Spelling Bee, Choir, Drama
-- Boarding: HTL 02 (admission) and HTL 03 (bursary) forms required
 
 Be concise, warm and helpful. If unsure, direct them to call the school.`
 
@@ -25,7 +24,7 @@ const uid = () => `${Date.now()}-${Math.random().toString(16).slice(2)}`
 
 const QUICK = [
   'How do I apply for admission?',
-  'Is boarding available?',
+  'What subjects do you offer?',
   'What documents do I need?',
   'What are your school hours?',
 ]
@@ -59,7 +58,7 @@ export default function ChatbotWidget() {
   const [busy, setBusy]       = useState(false)
   const [messages, setMessages] = useState([{
     id: uid(), role: 'bot',
-    text: "👋 Hello! I'm the Lupindo SSS assistant. Ask me anything about admissions, boarding, results, or school life — I'm happy to help!",
+    text: "👋 Hello! I'm the Lupindo SSS assistant. Ask me anything about admissions, results, or school life — I'm happy to help!",
   }])
   const endRef = useRef(null)
   const inputRef = useRef(null)

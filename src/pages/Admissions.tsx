@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Upload,
   CheckCircle,
-  BedDouble,
   X,
   FileText,
   ChevronRight,
@@ -289,18 +288,6 @@ export const Admissions = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="section-title">General Application for Admission</h1>
 
-        {/* Boarding notice */}
-        <div className="mb-8 bg-white border border-gray-200 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div>
-            <div className="font-bold text-gray-900">Need boarding accommodation?</div>
-            <div className="text-sm text-gray-600">
-              General and boarding applications are separate. Submit both if a hostel bed is required.
-            </div>
-          </div>
-          <a href="/boarding" className="btn-primary inline-flex items-center justify-center gap-2 shrink-0">
-            <BedDouble size={18} /> Boarding Application
-          </a>
-        </div>
 
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
 
