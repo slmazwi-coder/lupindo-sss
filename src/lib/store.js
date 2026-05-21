@@ -33,7 +33,7 @@ export const SCHOOL = {
   tiktok:     'https://www.tiktok.com/@lupindosss',
 }
 
-// ── Default data ────────────────────────────────────────────────────────────
+// ── Default data ─────────────────────────────────────────────────────────
 const DEFAULT_NEWS = [
   {
     id: '1',
@@ -62,7 +62,7 @@ const DEFAULT_ABOUT = {
     'Parents and guardians are encouraged to engage actively with the school through meetings, events, and ongoing learner support. Together we build a culture of achievement and pride.',
   ],
   principal: {
-    name: 'Mr L.M. Ntshayisa',
+    name: 'Ms Mabutyana',
     title: 'Principal',
     message: [
       'Welcome to Lupindo Senior Secondary School. We believe every learner carries within them the capacity for greatness. Our role is to unlock it — through discipline, love, and unwavering belief in their potential.',
@@ -137,12 +137,12 @@ export const setResultsByYear = (y, v) => set(`results_${y}`, v)
 export const getAchievers = (y)      => get(`achievers_${y}`, [])
 export const setAchievers = (y, v)   => set(`achievers_${y}`, v)
 
-// ── Auth ────────────────────────────────────────────────────────────────────
+// ── Auth ────────────────────────────────────────────────────────────
 export const isAuthenticated = () => localStorage.getItem('lss_auth') === 'true'
 export const login  = (pw) => { if (pw === 'admin2026') { localStorage.setItem('lss_auth', 'true'); return true } return false }
 export const logout = ()   => localStorage.removeItem('lss_auth')
 
-// ── IDs ─────────────────────────────────────────────────────────────────────
+// ── IDs ────────────────────────────────────────────────────────────
 export const generateId = () => `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`
 
 let _counters = {}
